@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trending_news_and_events",
+  "info": {
+    "singularName": "trending-news-and-event",
+    "pluralName": "trending-news-and-events",
+    "displayName": "Trending News and Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}

@@ -4,21 +4,20 @@
   "info": {
     "singularName": "student-union-press-club-member",
     "pluralName": "student-union-press-club-members",
-    "displayName": "Student Union Press Club Member"
+    "displayName": "Student Union Press Club Article"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "contact": {
-      "type": "string"
-    },
-    "position": {
-      "type": "string"
+    "body": {
+      "type": "richtext",
+      "required": true
     },
     "image": {
       "allowedTypes": [
@@ -28,7 +27,18 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
     }
   }
 }

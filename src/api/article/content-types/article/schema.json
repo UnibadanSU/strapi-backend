@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "News Article"
+    "displayName": "News Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,14 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "tags": {
-      "type": "enumeration",
-      "enum": [
-        "news",
-        "events"
       ]
     },
     "slug": {

@@ -12,13 +12,20 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "position": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "contact": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "about": {
+      "type": "richtext",
+      "required": true
     },
     "image": {
       "allowedTypes": [
@@ -28,7 +35,8 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true
     }
   }
 }

@@ -20,12 +20,10 @@
       "required": true
     },
     "contact": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "about": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "image": {
       "allowedTypes": [
